@@ -1219,8 +1219,8 @@ img{
     background:linear-gradient(93.12deg, rgba(169, 111, 68, 0.65) -8.85%, rgba(242, 236, 182, 0.65) 229.03%);
     width: 42px;
     height: 42px;
-    border-radius: 16px;
-    margin-right: 8px;
+    border-radius: 12px;
+    margin-right: 10px;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
