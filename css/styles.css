@@ -199,11 +199,10 @@ img{
     bottom: 40px;
     left: 64px;
     max-width: 92.3%;
-
     display: flex;
     flex-wrap: wrap;
     align-items:center;
-    justify-content: space-between;
+    justify-content: flex-start;
     background: rgba(255, 255, 255, 1);
     background-size: 100% 100%;
     background-position: center center;
@@ -736,12 +735,12 @@ img{
 
 
 .offers-cards{
-    margin-top: 32px;
+    margin-top: 22px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 391px);
-    grid-column-gap: 32px;
-    grid-row-gap: 32px;
+    grid-column-gap: 21px;
+    grid-row-gap: 27px;
 }
 
 .offers-card-frame{
@@ -936,3 +935,223 @@ img{
     color:rgb(251, 252, 255);
     background: rgb(102, 122, 184);
 }
+
+/* Best Offers Styles end */
+
+
+
+/* Residential Complexes Styles Start */
+
+.resid_container{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 162px;
+}
+
+.resid_title{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    margin-bottom: 24px;
+}
+
+/* Residential complexes navigation start */
+
+.resid_navigation{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.resid-view_all{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.2px;
+    text-decoration: none;
+    background: linear-gradient(135deg, #353A5F 0%, #6a88c5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.resid-view_all::after{
+    content: "";
+    padding-right: 18px;
+    background: url("..\\img\\svg\\arrow-right-icon.svg") no-repeat right center;
+    transition: 0.2s all;
+}
+
+.resid-view_all:hover,
+.resid-view_all:active,
+.resid-view_all:focus {
+    transform: scale(1.05);
+
+}
+
+.resid-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items:center;
+    text-transform: uppercase;
+}
+
+.resid-list-item{
+    transition: .2s ease-in-out;
+}
+
+.resid-list-item:not(:last-child){
+    margin-right: 8px;
+}
+
+.resid-list-link{
+    font-family: 'Manrope', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14.4px;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    padding: 8px 10px;
+}
+
+.resid-list-item:not(:first-child) .resid-list-link{
+    border: 1px solid;
+    border-image: rgba(169, 111, 68, 0.6);
+    border-radius: 6px;
+    color:rgba(180, 142, 105, 1);
+}
+
+.resid-list-item:first-child .resid-list-link{
+    border: 1px solid;
+    border-image: rgba(169, 111, 68, 0.6);
+    border-radius: 6px;
+    background: linear-gradient(93.12deg, rgba(169, 111, 68, 0.7) -8.85%, rgba(242, 236, 182, 0.7) 229.03%);
+    color: rgba(255, 255, 255, 1);
+}
+
+.resid-list-item:hover,
+.resid-list-item:active,
+.resid-list-item:focus {
+    transform: scale(1.05);
+}
+/* Residential complexes navigation end */
+
+.resid-cards{
+    margin-top: 22px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 21px;
+    grid-row-gap: 37px;
+}
+
+.resid-card-frame{
+    width: 100%;
+    height: auto;
+}
+
+.resid-card-pic{
+    position: relative;
+    margin-bottom: 11px;
+}
+
+.resid-card-pic_desc{
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: flex-start;    
+}
+
+.resid-card-pic_desc_item{
+    font-family: 'Manrope', sans-serif;
+    color: rgba(255, 255, 255, 1);
+    letter-spacing: 0.1em;
+    font-size: 10px;
+    text-transform: uppercase;
+    padding: 7px 5px 5px 5px;
+}
+
+.resid-card-pic_desc_item:first-child{
+    margin-right: 8px;
+    background: rgba(40, 40, 40, 0.6);
+    border-radius: 4px;
+}
+
+.resid-card-pic_desc_item:last-child{
+    background: rgba(62, 127, 136, 0.6);
+    border-radius: 4px;
+}
+
+
+.resid-card-title{
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    margin-bottom: 6px;
+}
+
+.resid-card-loc{
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 11px;
+}
+
+.resid-card-loc-item_link{
+    margin-right: 6px;
+    text-decoration: none;
+    color: rgba(111, 128, 177, 1);
+}
+
+.resid-card-loc-item_loc::before{
+    content: "";
+    background: url("..\\img\\svg\\loc-icon.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 80% 80%;
+    padding-right: 15px;
+}
+
+.resid-card-price{
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.resid-button{
+    appearance: none;
+    background: transparent;
+    border: 1px solid rgba(111, 128, 177, 1);
+    padding: 18px 32px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 32px;
+    left: 43.5%;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.2px;
+    color:rgba(111, 128, 177, 1);
+    transition: all 0.12s ease-in-out;
+}
+
+.resid-button:hover,
+.resid-button:active,
+.resid-button:focus{
+    font-weight: 700;
+    transform: scale(1.05);
+    color:rgb(251, 252, 255);
+    background: rgb(102, 122, 184);
+}
+
+/* Residential Complexes Styles End*/
+
