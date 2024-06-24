@@ -1383,20 +1383,20 @@ img{
 
 .links_grid{
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    flex-wrap: wrap;
     width: 100%;
     height: auto;
 }
 
 .links_card-frame,
 .links_card_subgrid-frame{
+    flex: 1;
     display: block;
     position: relative;
     border: 1px solid;
     border-radius: 24px;
     border-color: rgba(180, 142, 105, 0.2);
-    width: 320px;
+    width: 283.5px;
     height: 100%;
 }
 
@@ -1430,7 +1430,6 @@ img{
     justify-content:space-between;
     padding: 4px 0;
     margin-bottom: 8px;
-
 }
 
 .links_card-list_item:last-child,
@@ -1458,6 +1457,7 @@ img{
     font-weight: 500;
     color: rgba(111, 128, 177, 1);
     text-decoration: none;
+    
 }
 
 .links_card-list_item span,
@@ -1471,7 +1471,6 @@ img{
 .links_card_subgrid{
     display: grid;
     place-items: center;
-    /* flex: 0 0 auto; */
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 21px;
@@ -1503,3 +1502,181 @@ img{
     margin-bottom: 21px;
 }
 /* Useful links styles end */
+
+
+/*  Final question styles start */
+.question_pic_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 266.67px;
+    margin-bottom: 100px;
+}
+
+.question_pic1{
+    height: 100%;
+    width: 100%;
+}
+
+.question_submit{
+    position: absolute;
+    top: 22px;
+    left: 42px
+}
+
+.question_pic2{
+    position: absolute;
+    bottom: 0;
+    width: 20%;
+    height: auto;
+}
+
+.question_title{
+    font-family: 'Manrope', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: left;
+    color: rgba(40, 40, 40, 1);
+    margin-bottom: 10px;
+}
+
+.question_subtitle{
+    font-family: 'Manrope', sans-serif;
+    width: 270px;
+    margin-bottom: 16px;
+}
+
+.question_quote_container{
+    position: absolute;
+    top: 74px;
+    right: 96px;
+    width: 313px;
+}
+
+.mark-wrap{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.quotation_mark{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    z-index: -1;
+    top: -20px;
+    left: -31px;
+}
+
+.question_quote{
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 26.67px;
+}
+
+.question_sub{
+    font-family: 'Manrope', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    color: rgba(159, 159, 159, 1);
+    text-align: right;
+    margin-right: 23.33px;
+
+}
+
+.question_sub::before{
+    content: "";
+    background: url("..\\img\\svg\\stick-icon.svg") no-repeat left center;
+    padding-right: 53px;
+    margin-right: 16px;
+}
+
+.question-form_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.input-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+  
+
+.question-form_field{
+    width: 210px;
+    border: 0;
+    border-radius: 4px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    color:rgba(180, 180, 180, 1);
+    margin-bottom: 12px;
+
+}
+
+.question-form_field:first-child{
+    margin-right: 12px;
+}
+
+.question-form_field::placeholder{
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23.2px;
+    text-align: left;
+    color: rgba(180, 180, 180, 1);
+}
+
+.question-form_button{
+    font-family: 'Manrope', sans-serif;
+    width: 120px;
+    padding: 11px;
+    background: linear-gradient(135deg, #353A5F 0%, #9EBAF3 100%);
+    color:rgba(255, 255, 255, 1);
+    font-size: 12px;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.question-form_button:hover,
+.question-form_button:active,
+.question-form_button:focus{
+    background: linear-gradient(135deg, #1a2153 0%, #6488d0 100%);
+}
+
+.button-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.privacy-text{
+    font-family: 'Manrope', sans-serif;
+    text-align: left;
+    width: 260px;
+    font-size: 12px;
+    color:rgba(40, 40, 40, 0.5);
+    margin-left: 26px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+}
+
+.privacy-link {
+    color: rgba(111, 128, 177, 1);
+}
+
+.privacy_check-icon{
+    position: absolute;
+    top: 1px;
+    left: 0px;
+    width: 4%;
+    height: auto;
+}
