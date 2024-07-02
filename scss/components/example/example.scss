@@ -84,6 +84,7 @@ $carousel_width:60%;
 
     &__container{
         @include title(space-between);
+        align-items: center;
         &-carousel{
             max-width: $carousel_width;
             height: auto;
@@ -104,8 +105,20 @@ $carousel_width:60%;
                 background-size: 50%;
                 height: 50px;
             }
+           
+            &-sub-carousel{
+                margin-top: 12px;
+                height: auto;
+                @include title(space-between);
+
+                &-thumb{
+                    width: $carousel_width / 4;
+                }
+            }
         }
+
         &-form{
+            max-width: 100%-$carousel_width;
             display: flex;
             flex-direction: column;
 
@@ -113,13 +126,13 @@ $carousel_width:60%;
                 display: block;
                 border-radius: 38px;
                 box-shadow: 0px 8px 40px 0px rgba(157, 157, 157, 0.15);
-                margin-bottom: 12px;
+                margin-bottom: 10px;
 
                 &-subtitle{
                     font-size: 14px;
                     font-weight: 400;
                     color: rgba(180, 180, 180, 1);
-                    margin: 32px 220px 12px 32px;
+                    margin: 20px 220px 8px 32px;
                 }
 
                 &-title{
@@ -127,26 +140,92 @@ $carousel_width:60%;
                     flex-wrap: nowrap;
                     justify-content: space-between;
                     align-items: center;
-                    margin-bottom: 16px;
+                    margin-bottom: 12px;
 
                     &-price{
-                        font-size: 26px;
+                        font-size: 22px;
                         font-weight: 700;
                         margin-left: 32px;
+                        margin-bottom: 0;
                     }
 
                     &-square{
-                        font-size: 20px;
+                        font-size: 16px;
                         font-weight: 500;
                         margin-right: 32px;
                         color: rgba(255, 255, 255, 1);
                         background: linear-gradient(94.71deg, rgba(169, 111, 68, 0.65) -0.45%, rgba(242, 236, 182, 0.65) 219.73%);
                         border-radius: 10px;
                         padding: 6px 12px 6px 12px;
+                        margin-bottom: 0;
+                    }
+                }
+                
+                &-list{ 
+                    margin: 0 32px 0 32px;
+                    padding: 0;
+
+                    &-item{
+                        display:flex;
+                        justify-content:space-between;
+                        margin-bottom: 8px;
+                        margin-left: 16px;
+
+                        &-link{
+                            flex-shrink:0;
+                            order:1;
+                            text-decoration: none;
+                            color: black;
+                        }
+
+                        &-span{
+                            color:#9f9f9f;
+                            flex-shrink:0;
+                            order:3;
+                            padding-left:4px
+                        }
+                    }
+
+                    &-item:last-child{
+                        margin-bottom: 0;
+                    }
+
+                    &-item::after{
+                        color: rgba(169, 111, 68, 0.35);
+                        content:"..............................................................................................................................";
+                        display:flex;
+                        flex-grow:1;
+                        order:2;
+                        overflow:hidden;
+                        padding: 0 4px;
+                        text-overflow:ellipsis;
+                    }
+                }
+
+                &-link{
+                    display: block;
+                    color:rgba(111, 128, 177, 1);
+                    text-decoration: underline;
+                    margin: 10px  0 10px 32px;
+                }
+
+                &-button{
+                    margin: 0 32px 20px 32px;
+                    &-ask{
+                        width: 448px;
+                        background: linear-gradient(135deg, #353A5F 0%, #9EBAF3 100%);
+                        font-weight: 500;
+                        line-height: 16.8px;
+                        color: rgba(255, 255, 255, 1);
+                        padding: 20px 26px 20px 26px;
+                        border: none;
+                        border-radius: 6px;
                     }
 
                 }
+            
             }
+
 
             &-manager{
                 display: block;
@@ -158,7 +237,7 @@ $carousel_width:60%;
                     font-size: 22px;
                     font-weight: 700;
                     line-height: 28.8px;
-                    margin: 27px 112px 12px 32px;
+                    margin: 17px 112px 12px 32px;
                 }
                 &-info{
                     display: flex;
@@ -185,33 +264,22 @@ $carousel_width:60%;
                     display: block;
                     color:rgba(111, 128, 177, 1);
                     text-decoration: underline;
-
-                    margin: 12px  0 29px 32px;
+                    margin: 12px  0 19px 32px;
                 }
             }
         }
         
     }
 
-    &__sub-carousel{
-        margin-top: 12px;
-        max-width: $carousel_width;
-        height: auto;
-        @include title(space-between);
-
-        &-thumb{
-            width: $carousel_width / 4;
-        }
-    }
-
-
     &__info{
+        font-size: 12px;
         margin-top: 60px;
         max-width: 62%;
         height: auto;
         margin-bottom: 53px;
         
         &-subtitle{
+            font-size: 12px;
             margin-bottom: 12px;
         }
     }
