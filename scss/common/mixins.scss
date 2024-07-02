@@ -1,0 +1,4 @@
+@mixin title($justify){
+    @extend %extend_title;
+    justify-content: $justify;
+}

@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deluxe Estate</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/styles.css">
+
+
 </head>
 <body>
     <header class="header">
@@ -28,26 +32,24 @@
                 </form>  
 
                 <nav class="header_nav">
-                    <ul class="header_list">
-                        <li class="header_item">
-                            <a href="#" class="header_link">Продать</a>
-                        </li>
-                        <li class="header_item">
-                            <a href="#" class="header_link">Купить</a>
-                        </li>
-                        <li class="header_item">
-                            <a href="#" class="header_link">Инвестировать</a>
-                        </li>
-                        <li class="header_item">
-                            <a href="#" class="header_link">Снять</a>
-                        </li>
-                        <li class="header_item">
-                            <a href="#" class="header_link">Услуги</a>
-                        </li>
-                        <li class="header_item">
-                            <a href="#" class="header_link">Компания</a>
-                        </li>
-                    </ul>
+                    <div class="header_item">
+                        <a href="#" class="header_link">Продать</a>
+                    </div>
+                    <div class="header_item">
+                        <a href="#" class="header_link">Купить</a>
+                    </div>
+                    <div class="header_item">
+                        <a href="#" class="header_link">Инвестировать</a>
+                    </div>
+                    <div class="header_item">
+                        <a href="#" class="header_link">Снять</a>
+                    </div>
+                    <div class="header_item">
+                        <a href="#" class="header_link">Услуги</a>
+                    </div>
+                    <div class="header_item">
+                        <a href="#" class="header_link">Компания</a>
+                    </div>
                 </nav>
 
                 <div class="header_item_phone">
@@ -70,36 +72,75 @@
                 <div class="intro_image_container">
                     <img src="img\\pink_sky.png" alt="Pink Sky" class="intro_pic1">
                     <img src="img\\city.png" alt="City" class="intro_pic2">
-                    <div class="intro_subtitle_container">
-                        <a href="#" class="intro_subtitle_link">
-                            подбор и сопровождение сделок с недвижимостью 
-                        </a>
-                    </div>
+                    <a href="second_page.html" class="intro_subtitle_link">
+                        подбор и сопровождение сделок с недвижимостью 
+                    </a>
 
                     <h1 class="intro_title">
                         Хотите купить недвижимость в Крыму?
                     </h1>
 
                     <div class="filters_button_wrapper">
-                        <div class="filters_button_container">
-                            <button class="filter_button_info" title="Тип недвижимости">Тип недвижимости</button>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Тип недвижимости
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><button class="dropdown-item" type="button">Дейсвтие</button></li>
+                                <li><button class="dropdown-item" type="button">Другое дейсвтие</button></li>
+                                <li><button class="dropdown-item" type="button">Что-то ещё</button></li>
+                            </ul>
                         </div>
-                        <div class="filters_button_container">
-                            <button class="filter_button_info" title="Адрес">Адрес</button>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Адрес
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><button class="dropdown-item" type="button">Дейсвтие</button></li>
+                                <li><button class="dropdown-item" type="button">Другое дейсвтие</button></li>
+                                <li><button class="dropdown-item" type="button">Что-то ещё</button></li>
+                            </ul>
                         </div>
-                        <div class="filters_button_container">
-                            <button class="filter_button_info" title="1,2 комн.">1,2 комн.</button>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                1,2 комн.
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><button class="dropdown-item" type="button">Дейсвтие</button></li>
+                                <li><button class="dropdown-item" type="button">Другое дейсвтие</button></li>
+                                <li><button class="dropdown-item" type="button">Что-то ещё</button></li>
+                            </ul>
                         </div>
-                        <div class="filters_button_container">
-                            <button class="filter_button_info" title="Вид">Вид</button>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Вид
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><button class="dropdown-item" type="button">Дейсвтие</button></li>
+                                <li><button class="dropdown-item" type="button">Другое дейсвтие</button></li>
+                                <li><button class="dropdown-item" type="button">Что-то ещё</button></li>
+                            </ul>
                         </div>
-                        <div class="filters_button_container">
-                            <button class="filter_button_info" title="Цена">Цена</button>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Цена
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><button class="dropdown-item" type="button">Дейсвтие</button></li>
+                                <li><button class="dropdown-item" type="button">Другое дейсвтие</button></li>
+                                <li><button class="dropdown-item" type="button">Что-то ещё</button></li>
+                            </ul>
                         </div>
-                        <div class="filters_button_container">
-                            <button class="filter_button_info" title="Площадь">Площадь</button>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Площадь
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><button class="dropdown-item" type="button">Дейсвтие</button></li>
+                                <li><button class="dropdown-item" type="button">Другое дейсвтие</button></li>
+                                <li><button class="dropdown-item" type="button">Что-то ещё</button></li>
+                            </ul>
                         </div>
-
                         <div class="filters_button_search_container">
                             <button type="submit" class="filters_button_search_container_ask">Начать поиск</button>  
                         </div>
@@ -125,16 +166,16 @@
                                 <h2 class="scroll_fig_title1">
                                     Продажа отеля на берегу моря в Алуште
                                 </h2>
-                                <ul class="scroll_fig_list1">
-                                    <li class="scroll_fig_list_item">
+                                <div class="scroll_fig_list1">
+                                    <div class="scroll_fig_list_item">
                                         <div class="scroll_fig_list_item_loc">
                                             <a href="#" class="scroll_fig_list_link">Ялта</a>
                                         </div>
-                                    </li>
-                                    <li class="scroll_fig_list_item">
+                                    </div>
+                                    <div class="scroll_fig_list_item">
                                         <p class="scroll_fig_list_item">ЖК «Южный берег», первичная отделка, 2 этажа</p>
-                                    </li>
-                                </ul>
+                                    </div>
+                                </div>
 
                                 <ul class="scroll_fig_list3">
                                     <li class="scroll_fig_list_item">
@@ -170,7 +211,15 @@
                                   <span class="icon-4 scroll_list_icon_item_info">2/2</span>
                                 </div>
                             </div>
-
+                            <ul class="scroll_dots1">
+                                <li class="filled"></li>
+                                <li class="filled"></li>
+                                <li class="filled"></li>
+                                <li class="empty"></li>
+                                <li class="filled"></li>
+                                <li class="filled"></li>
+                                <li class="filled"></li>
+                            </ul>
                         </div>
                     </div>
 
@@ -190,6 +239,15 @@
                                 Ремонт под ключ
                             </h2>
                         </div>
+                        <ul class="scroll_dots2">
+                            <li class="filled"></li>
+                            <li class="filled"></li>
+                            <li class="filled"></li>
+                            <li class="empty"></li>
+                            <li class="filled"></li>
+                            <li class="filled"></li>
+                            <li class="filled"></li>
+                        </ul>
                     </div>         
                 </div>
             </div>
@@ -197,7 +255,7 @@
         <!-- Intro end -->
 
 
-        <!-- Best Offers start-->
+        <!-- Best Offers start -->
         <section class="best_offers">
             <div class="wrapper">
                 <div class="offers_container">
@@ -1298,7 +1356,7 @@
                     </div>
                 </div>
             </div>
-        </section >      
+        </section > 
         <!-- Great opportunity start-->  
 
 

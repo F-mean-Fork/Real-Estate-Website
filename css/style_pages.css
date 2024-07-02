@@ -1,0 +1,476 @@
+@font-face {
+  font-display: swap;
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url("..\\fonts\\manrope-v15-latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  src: url("..\\fonts\\manrope-v15-latin-500.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  src: url("..\\fonts\\manrope-v15-latin-700.woff2") format("woff2");
+}
+/**
+ * @author Naveen
+ * @email codebynaveen@gmail.com
+ * @create date 2021-07-30 12:52:04
+ * @modify date 2021-07-30 13:24:53
+ * @desc Quick style reset using scss.
+ * extracted highly needed styles from normalize.css and added some extra touches.
+
+ ****************************************************************
+  How to use:
+  add
+  @import './reset'; 
+  in your main style.scss before all styles.
+*/
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.5; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ */
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Remove the gray background on active links in IE 10.
+ * Remove underlin from all browsers.
+ */
+a {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  bottom: -0.25em;
+}
+
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.5em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ * 3. Reomve border in all browsers.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.5; /* 1 */
+  margin: 0; /* 2 */
+  border: none; /* 3 */
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+.header__nav-item-phone-link, .header__nav-item-link {
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.example__sub-carousel, .example__container, .example__address, .example__title {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.wrapper {
+  max-width: 1280px;
+  max-height: 100%;
+  margin: 0 auto;
+}
+
+.header__nav-item-phone-link, .header__nav-item-link {
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.example__sub-carousel, .example__container, .example__address, .example__title {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.header__container {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0px;
+  margin-bottom: 13px;
+}
+.header__container-logo {
+  display: flex;
+  flex-wrap: wrap;
+}
+.header__container-logo-link-thumb {
+  width: 161px;
+  height: 40px;
+}
+.header__item-search {
+  margin-left: 30px;
+}
+.header__item-search-wrap-info-icon {
+  height: auto;
+  margin-right: 4px;
+}
+.header__item-search-wrap-info-search {
+  width: 130px;
+  height: 17px;
+  border: none;
+  padding: 0;
+  color: rgb(159, 159, 159);
+}
+.header__nav {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__nav-item {
+  margin: 0 16px;
+}
+.header__nav-item-link {
+  line-height: 16.8px;
+  text-align: left;
+  color: rgb(40, 40, 40);
+}
+.header__nav-item-phone {
+  margin-right: 24px;
+  margin-left: 40px;
+}
+.header__nav-item-phone-icon {
+  width: 16px;
+}
+.header__nav-item-phone-link {
+  color: #353A5F;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+.header__nav-item-button {
+  margin-right: 0px;
+}
+.header__nav-item-button-ask {
+  background: linear-gradient(135deg, #353A5F 0%, #9EBAF3 100%);
+  font-weight: 500;
+  line-height: 16.8px;
+  color: rgb(255, 255, 255);
+  width: 148px;
+  height: 43px;
+  padding: 12px 24px 14px 24px;
+  border: none;
+  border-radius: 6px;
+}
+.header__nav-item-button-ask:hover, .header__nav-item-button-ask:active, .header__nav-item-button-ask:focus {
+  background: linear-gradient(135deg, #654ca4 0%, #9EBAF3 100%);
+}
+.header__scr {
+  font-weight: 500;
+  line-height: 16.8px;
+  color: rgb(180, 180, 180);
+  margin-bottom: 43px;
+}
+
+.header__nav-item-link, .header__nav-item-phone-link {
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.example__sub-carousel, .example__container, .example__address, .example__title {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.example__title {
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.example__title-text {
+  font-size: 28px;
+  font-weight: 700;
+}
+.example__title-links {
+  display: flex;
+  flex-wrap: nowrap;
+  font-weight: 500;
+  align-items: center;
+}
+.example__title-links-submit {
+  color: rgb(111, 128, 177);
+  margin-right: 26px;
+}
+.example__title-links-submit::before {
+  content: "";
+  background-image: url("..\\img\\svg\\share-icon.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-right: 26px;
+}
+.example__title-links-pdf {
+  color: rgb(111, 128, 177);
+}
+.example__title-links-pdf::before {
+  content: "";
+  background-image: url("..\\img\\svg\\printer-icon.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 100% 100%;
+  padding-right: 36px;
+}
+.example__address {
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+.example__address-city {
+  color: rgb(111, 128, 177);
+}
+.example__address-city::before {
+  content: "";
+  background-image: url("..\\img\\svg\\loc-icon.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-right: 26px;
+}
+.example__address-street {
+  margin-left: 16px;
+  margin-right: 28px;
+}
+.example__address-variants {
+  color: rgb(111, 128, 177);
+}
+.example__address-variants::before {
+  content: "";
+  background-image: url("..\\img\\svg\\eye-icon.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-right: 26px;
+}
+.example__container {
+  justify-content: space-between;
+}
+.example__container-carousel {
+  max-width: 60%;
+  height: auto;
+  margin-right: 21px;
+}
+.example__container-carousel .carousel-control-next-icon {
+  width: 50px;
+  background-color: #495966;
+  border-radius: 50%;
+  background-size: 50%;
+  height: 50px;
+}
+.example__container-carousel .carousel-control-prev-icon {
+  width: 50px;
+  background-color: #495966;
+  border-radius: 50%;
+  background-size: 50%;
+  height: 50px;
+}
+.example__container-form {
+  display: flex;
+  flex-direction: column;
+}
+.example__container-form-price {
+  display: block;
+  border-radius: 38px;
+  box-shadow: 0px 8px 40px 0px rgba(157, 157, 157, 0.15);
+  margin-bottom: 12px;
+}
+.example__container-form-price-subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(180, 180, 180);
+  margin: 32px 220px 12px 32px;
+}
+.example__container-form-price-title {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.example__container-form-price-title-price {
+  font-size: 26px;
+  font-weight: 700;
+  margin-left: 32px;
+}
+.example__container-form-price-title-square {
+  font-size: 20px;
+  font-weight: 500;
+  margin-right: 32px;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(94.71deg, rgba(169, 111, 68, 0.65) -0.45%, rgba(242, 236, 182, 0.65) 219.73%);
+  border-radius: 10px;
+  padding: 6px 12px 6px 12px;
+}
+.example__container-form-manager {
+  display: block;
+  border-radius: 38px;
+  box-shadow: 0px 8px 40px 0px rgba(195, 195, 195, 0.15);
+  background: rgb(245, 245, 245);
+}
+.example__container-form-manager-title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28.8px;
+  margin: 27px 112px 12px 32px;
+}
+.example__container-form-manager-info {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-left: 32px;
+  height: auto;
+}
+.example__container-form-manager-info-decs {
+  margin-left: 12px;
+}
+.example__container-form-manager-info-decs-item {
+  margin-bottom: 6px;
+}
+.example__container-form-manager-info-decs-item:first-child {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.example__container-form-manager-link {
+  display: block;
+  color: rgb(111, 128, 177);
+  text-decoration: underline;
+  margin: 12px 0 29px 32px;
+}
+.example__sub-carousel {
+  margin-top: 12px;
+  max-width: 60%;
+  height: auto;
+  justify-content: space-between;
+}
+.example__sub-carousel-thumb {
+  width: 15%;
+}
+.example__info {
+  margin-top: 60px;
+  max-width: 62%;
+  height: auto;
+  margin-bottom: 53px;
+}
+.example__info-subtitle {
+  margin-bottom: 12px;
+}
+
+/*# sourceMappingURL=style_pages.css.map */

@@ -1,0 +1,111 @@
+@import "..\\..\\common\\extends.scss";
+
+.header{
+    &__container{
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items:center;
+        justify-content: space-between;
+        padding: 16px 0px;
+        margin-bottom: 13px;
+        
+        &-logo{
+            display: flex;
+            flex-wrap: wrap;
+
+            &-link-thumb{
+                width: 161px;
+                height: 40px;
+            }
+        }
+    }
+
+    &__item-search{
+        margin-left: 30px;
+        &-wrap{
+            &-info{
+                &-icon{
+                    height:auto;
+                    margin-right: 4px;
+                }
+
+               &-search{
+                    width: 130px;
+                    height: 17px;
+                    border: none;
+                    padding: 0;
+                    color: rgba(159, 159, 159, 1);
+                }
+            }
+        }
+    }
+
+    &__nav{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items:center;
+
+        &-item{
+            margin: 0 16px;
+        
+            &-link{
+                line-height: 16.8px;
+                text-align: left;
+                color: rgba(40, 40, 40, 1);
+                @extend %extend_link;
+            }
+        }
+
+        &-item-phone{
+            margin-right: 24px;
+            margin-left: 40px;
+            &-icon{
+                width: 16px;
+            }
+
+            &-link{
+                color:#353A5F;
+                letter-spacing: 0.05em;
+                text-align: left;
+                @extend %extend_link;
+            }
+
+            // &-link:hover,
+            // &-link:active,
+            // &-link:focus{
+            //     font-weight: 700;
+            // }
+        }
+
+        &-item-button{
+            margin-right: 0px;
+            
+            &-ask{
+                background: linear-gradient(135deg, #353A5F 0%, #9EBAF3 100%);
+                font-weight: 500;
+                line-height: 16.8px;
+                color: rgba(255, 255, 255, 1);
+                width: 148px;
+                height: 43px;
+                padding: 12px 24px 14px 24px;
+                border: none;
+                border-radius: 6px;
+            }
+            
+            &-ask:hover,
+            &-ask:active,
+            &-ask:focus{
+                background: linear-gradient(135deg, #654ca4 0%, #9EBAF3 100%);
+            }
+        
+        }     
+    }  
+    &__scr{
+        font-weight: 500;
+        line-height: 16.8px;
+        color: rgba(180, 180, 180, 1);
+        margin-bottom: 43px;
+    }
+}
