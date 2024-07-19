@@ -1,7 +1,11 @@
 @import ".\\common";
 @import ".\\components\\header\\index.scss";
 @import ".\\components\\example\\index.scss";
+@import ".\\components\\main_info\\index.scss";
 
-// @import ".\\components\\useful_links";
+
+
+@import ".\\components\\similar_offers";
+@import ".\\components\\useful_links";
 @import ".\\components\\final_questions\\index.scss";
 @import ".\\components\\footer\\index.scss";

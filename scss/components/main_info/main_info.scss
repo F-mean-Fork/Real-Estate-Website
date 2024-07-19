@@ -1,0 +1,164 @@
+@import "..\\..\\common\\extends.scss";
+@import "..\\..\\common\\mixins.scss";
+
+$main_info_width:60%; 
+
+.main_info{
+
+    &__container{
+        width: auto;
+
+        &-title{
+            max-width: $main_info_width;  
+            font-size: 20px;
+            font-weight: 800;
+            text-align: left; 
+            margin-bottom: 21px;
+        }
+
+        &-pic{
+            max-width: $main_info_width;  
+            margin-bottom: 50px;
+        }
+
+        &-map{
+            max-width: $main_info_width;
+            height: auto;
+            position: relative;
+            margin-bottom: 50px;
+
+            &-pic{
+                width: 100%;
+                
+            }
+            &-loc{
+                position: absolute;
+                right: 250px;
+                top: 190px
+            }
+        }
+    
+        &-info{
+            width: $main_info_width;
+            display: flex;
+            flex-wrap: nowrap;
+            margin-bottom: 53px;
+
+            &-list{
+                width: calc($main_info_width/1.25);
+                padding: 0;
+
+                &-item{
+                    display:flex;
+                    justify-content:space-between;
+                    margin-bottom: 8px;
+
+                    &-link{
+                        flex-shrink:0;
+                        order:1;
+                        text-decoration: none;
+                        color: black;
+                    }
+
+                    &-span{
+                        color:#9f9f9f;
+                        flex-shrink:0;
+                        order:3;
+                        padding-left:4px
+                    }
+                }
+
+                &-item:last-child{
+                    margin-bottom: 0;
+                }
+
+                &-item::after{
+                    color: rgba(169, 111, 68, 0.35);
+                    content:".............................................................................................";
+                    display:flex;
+                    flex-grow:1;
+                    order:2;
+                    overflow:hidden;
+                    padding: 0 4px;
+                    text-overflow:ellipsis;
+                }
+            } 
+            
+            &-list:first-child{
+                margin-right: 31px;
+            }
+        }
+
+        &-infra{
+            max-width: $main_info_width;
+            display: flex;
+            margin-bottom: 53px;
+            justify-content: space-between;
+
+            &-stucture{   
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;              
+                max-width: 30%;
+                
+                &__desc{
+                    display: flex;
+                    align-items: center;
+
+                    &-wrap{
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-content: center;
+                        justify-content: center;
+
+                        margin-right: 10px;
+                        width: 40px;
+                        height: 40px;
+                        background: linear-gradient(93.12deg, rgba(169, 111, 68, 0.65) -8.85%, rgba(242, 236, 182, 0.65) 229.03%);
+                        border-radius: 6px;
+
+                        &-thumb{
+                            width: 62.5%;
+                            height: 62.5%;
+                        }
+                    }
+
+                    &-item{
+                        display: flex;
+                        flex-direction: column;
+                        width: 200px;
+
+                        &-1{
+                            font-size: 13px;
+                            font-weight: 400;
+                            margin: 0;
+                            padding: 0;
+                        }
+
+                        &-2{
+                            font-size: 12px;
+                            line-height: 13px;
+                            font-weight: 400;
+                            color: rgba(180, 180, 180, 1);
+                            margin: 0;
+                            padding: 0;
+                        }
+                    }
+
+                    &-item1{
+                        font-size: 12px;
+                        font-weight: 400;
+                        width: 216px;
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+
+                &__desc:not(:last-child){
+                    margin-bottom: 12px;
+                }      
+            }
+        }
+
+    }
+}

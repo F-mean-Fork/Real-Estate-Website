@@ -1,7 +1,7 @@
 @import "..\\..\\common\\extends.scss";
 @import "..\\..\\common\\mixins.scss";
 
-$carousel_width:60%; 
+$carousel_width: 60%; 
 
 .example{
     &__title{
@@ -112,7 +112,7 @@ $carousel_width:60%;
                 @include title(space-between);
 
                 &-thumb{
-                    width: $carousel_width / 4;
+                    width: calc($carousel_width / 4);
                 }
             }
         }
@@ -274,7 +274,7 @@ $carousel_width:60%;
     &__info{
         font-size: 12px;
         margin-top: 60px;
-        max-width: 62%;
+        max-width: $carousel_width;
         height: auto;
         margin-bottom: 53px;
         
